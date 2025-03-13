@@ -45,7 +45,7 @@ pipeline {
             steps {
                 script {
                     // Run the new container with the built image
-                    sh "docker run -d --name flask_container -p 8080:5000 flask_image_lts"
+                    sh "docker run -d --name flask_container -p 8081:5000 flask_image_lts"
                 }
             }
         }
